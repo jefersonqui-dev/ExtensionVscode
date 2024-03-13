@@ -30,7 +30,7 @@ function App() {
         <div >
           <img src="public\assets\logo2.png" alt="logo" />
         </div>
-        <p>Made by Jeferson Quiguantar</p>
+        <p>Made by Jeferson Quiguantar - Code</p>
       </section>
     </>
   )
