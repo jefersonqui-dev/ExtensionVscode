@@ -22,13 +22,13 @@ function App() {
 
           </div>
           <p className="read__the-docs">
-            <a href="https://marketplace.visualstudio.com/items?itemName=jefersonquiguantar.sinergy" target='_blank'>VS Code</a>
+            <a src="https://marketplace.visualstudio.com/items?itemName=jefersonquiguantar.sinergy" target='_blank'>VS Code</a>
           </p>
         </div >
       </header>
       <section className='section__container'>
         <div >
-          <img href="https://github.com/jefersonqui/ExtensionVscode/blob/main/public/assets/logo2.png" alt="logo" />
+          <img src="https://github.com/jefersonqui/ExtensionVscode/blob/main/public/assets/logo2.png" alt="logo" />
         </div>
         <p>Made by Jeferson Quiguantar</p>
       </section>
