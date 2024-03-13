@@ -16,7 +16,7 @@ function App() {
               A minimal, dark blue theme for VS Code
             </p>
             <div className='header__image'>
-              <img src="/public/assets/imgext.jpg" alt="header image" />
+              <img src="public\assets\imgext.jpg" alt="header image" />
 
             </div>
 
@@ -28,7 +28,7 @@ function App() {
       </header>
       <section className='section__container'>
         <div >
-          <img src="/public/assets/logo2.png" alt="logo" />
+          <img src="public\assets\logo2.png" alt="logo" />
         </div>
         <p>Made by Jeferson Quiguantar</p>
       </section>
