@@ -19,8 +19,8 @@ function App() {
             </div>
 
           </div>
-          <p className="read-the-docs">
-            VS Code
+          <p className="read__the-docs">
+            <a href="https://marketplace.visualstudio.com/items?itemName=jefersonquiguantar.sinergy" target='_blank'>VS Code</a>
           </p>
         </div >
       </header>

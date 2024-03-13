@@ -51,20 +51,37 @@ h1 {
   box-shadow: 0 0 40px rgba(34, 154, 209, 0.2);
 }
 
-.header__read-docs {
+.read__the-docs {
   color: #fff;
   font-size: 1em;
   margin-top: 20px;
 }
 
-.header__read-docs a {
-  color: #fff;
+.read__the-docs a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none; /* Remove default border */
+  border-radius: 5px;
+  text-align: center;
   text-decoration: none;
+  font-weight: bold; /* Add boldness for emphasis */
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+
+  /* Default button style */
+  background-color: #596ecc;
+  color: #04293b;
+}
+.read__the-docs a:hover {
+  background-color: #ffd902;
+  color: #04293b;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
-.header__read-docs a:hover {
+/* .read__the-docs a:hover {
   text-decoration: underline;
-}
+} */
 
 .section__container{
   background-color: #04293b;
