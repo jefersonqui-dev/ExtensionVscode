@@ -46,23 +46,24 @@ h1 {
 }
 .header__image img{
   width: 100%; 
-  max-width: 100%;
+  max-width: 1000px;
   height: auto;
   /* height: 400px; */
-  margin-bottom: 40px;
+  margin: 40px;
   box-shadow: 0 0 40px rgba(34, 154, 209, 0.2);
   transition: width 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .header__image img {
-    max-width: 90%; /* Reducir el ancho máximo de la imagen para pantallas pequeñas */
+    margin-right: auto; /* Centra la imagen horizontalmente en pantallas pequeñas */
+    margin-left: auto;
   }
 }
 
 /* Regla de medios para pantallas medianas */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1060px) {
   .header__image img {
-    max-width: 80%; /* Reducir el ancho máximo de la imagen para pantallas medianas */
+    max-width: 90%; /* Reducir el ancho máximo de la imagen para pantallas medianas */
   }
 }
 
