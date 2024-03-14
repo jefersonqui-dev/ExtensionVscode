@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 function App() {
-  // const baseUrl = import.meta.env.BASE_URL;
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <>
       <header className='header__container'>
