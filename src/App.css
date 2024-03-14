@@ -50,6 +50,11 @@ h1 {
   margin-bottom: 40px;
   box-shadow: 0 0 40px rgba(34, 154, 209, 0.2);
 }
+@media screen and (max-width: 768px) {
+  .header__image img {
+    max-width: 90%; /* Reducir el ancho máximo de la imagen para pantallas pequeñas */
+  }
+}
 
 .read__the-docs {
   color: #fff;
