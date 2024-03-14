@@ -12,7 +12,7 @@ function App() {
               A minimal, dark blue theme for VS Code
             </p>
             <div className='header__image'>
-              <img src={`${baseUrl}src/assets/imgext.jpg`} alt="header image" />
+              <img src={`${baseUrl}assets/imgext.jpg`} alt="header image" />
             </div>
           </div>
           <p className="read__the-docs">
@@ -22,7 +22,7 @@ function App() {
       </header>
       <section className='section__container'>
         <div >
-          <img src={`${baseUrl}src/assets/logo2.png`} alt="logo" />
+          <img ssrc={`${baseUrl}assets/logo2.png`} alt="logo" />
         </div>
         <p>Made by Jeferson Quiguantar</p>
       </section>
