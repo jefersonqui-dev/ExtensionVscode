@@ -45,14 +45,24 @@ h1 {
   height: 400px; */
 }
 .header__image img{
-  width: 1200px; 
+  width: 100%; 
+  max-width: 100%;
+  height: auto;
   /* height: 400px; */
   margin-bottom: 40px;
   box-shadow: 0 0 40px rgba(34, 154, 209, 0.2);
+  transition: width 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .header__image img {
     max-width: 90%; /* Reducir el ancho máximo de la imagen para pantallas pequeñas */
+  }
+}
+
+/* Regla de medios para pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header__image img {
+    max-width: 80%; /* Reducir el ancho máximo de la imagen para pantallas medianas */
   }
 }
 
