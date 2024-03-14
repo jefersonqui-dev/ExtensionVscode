@@ -6,56 +6,91 @@
 }
 
 
+
+/* Estilos para el header */
 .header__container {
-  background-color: #04293b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* height: 100vh; */
+  text-align: center;
+  background-color: #04293b;/* Color de fondo del encabezado */
+  color: #fff; /* Color del texto del encabezado */
+  padding: 20px 0; /* Espaciado interno del encabezado */
 }
 
 .header__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  /* max-width: 800px;
-  padding: 20px; */
-  height: 100%;
+  max-width: 1200px; /* Ancho máximo del contenido del encabezado */
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
 }
-
 h1 {
+  
   color: #ff9d00;
   font-size: 6em;
-  padding: 60px;
+  padding: 40px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 10px rgba(74, 64, 156, 0.671);
-  
+  /* text-shadow: 2px 2px 10px rgba(74, 64, 156, 0.671); */
 }
 
 .header__subtitle {
+  
   color: #ccc;
   font-size:1.5em;
   margin-bottom: 100px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em; /* Reducir el tamaño de fuente del título para pantallas medianas */
+  }
+
+  .header__subtitle {
+    font-size: 14px; /* Reducir el tamaño de fuente del subtítulo para pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3em; /* Reducir aún más el tamaño de fuente del título para pantallas pequeñas */
+  }
+
+  .header__subtitle {
+    font-size: 12px; /* Reducir aún más el tamaño de fuente del subtítulo para pantallas pequeñas */
+  }
+}
+
 .header__image {
-  /* margin-bottom: 20px; */
-  /* max-width: 500px; */
-  /* width: 400px;
-  height: 400px; */
+  margin-top: 20px; /* Espaciado superior de la imagen */
 }
 .header__image img {
-  width: calc(100% - 220px);  /* Cambiado a un ancho del 100% */
-  height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la proporción */
+  /* max-width: 100%; La imagen se ajusta al ancho del contenedor */
+  height: auto; /* La altura de la imagen se ajusta automáticamente */
+  width: calc(100% - 30px); 
+  
   margin-bottom: 40px;
   box-shadow: 0 0 40px rgba(34, 154, 209, 0.2);
 }
 
-@media screen and (max-width: 768px) {
-  .header__image img {
-    max-width: 90%; /* Reducir el ancho máximo de la imagen para pantallas pequeñas */
+/* Estilos para la sección */
+.section__container {
+  text-align: center;
+  padding: 20px 0; /* Espaciado interno de la sección */
+  height: auto;
+  background-color: #04293b;
+
+}
+
+.section__container img {
+  max-width: 100%; /* La imagen se ajusta al ancho del contenedor */
+}
+
+
+/* Media queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+  .header__content {
+    padding: 0 10px; /* Espaciado interno reducido para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .header__subtitle {
+    font-size: 14px; /* Tamaño de fuente del subtítulo reducido para pantallas muy pequeñas */
   }
 }
 
@@ -68,44 +103,32 @@ h1 {
 .read__the-docs a {
   display: inline-block;
   padding: 10px 20px;
-  border: none; /* Remove default border */
+  border: none; 
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  font-weight: bold; /* Add boldness for emphasis */
+  font-weight: bold; 
   cursor: pointer;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
-
-  /* Default button style */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease-in-out; 
   background-color: #596ecc;
   color: #04293b;
 }
 .read__the-docs a:hover {
   background-color: #ffd902;
   color: #04293b;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* .read__the-docs a:hover {
-  text-decoration: underline;
-} */
-
-.section__container{
-  background-color: #04293b;
-  padding-bottom: 80px;
-}
-
-.section__container div img{
-  width: 100px;
-  padding-bottom: 30px;
-  
-}
 .section__container p{
   color: rgb(255, 255, 255);
   display: inline;
+  
   padding: 10px;
   background-color: #031c32;
   
 
+}
+.section__container div{
+  margin-bottom: 60px;
 }
